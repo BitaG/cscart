@@ -13,12 +13,11 @@ msgstr ""
 "PO-Revision-Date: 2018-12-25 08:30\n"
 
 msgctxt "Addons::description::sendpulse"
-msgid "Синхронизация с сервисом рассылок SendPulse"
+msgid "Synchronization with SendPulse marketing platform."
 msgstr "Синхронизация с сервисом рассылок SendPulse."
 
-# GENERAL
 msgctxt "SettingsSections::sendpulse::sp_general"
-msgid "SendPulse Connect"
+msgid "Connect to SendPulse"
 msgstr "Подключение к SendPulse"
 
 msgctxt "SettingsOptions::sendpulse::sp_client_id"
@@ -29,118 +28,90 @@ msgctxt "SettingsOptions::sendpulse::sp_client_secret"
 msgid "Secret"
 msgstr "Secret"
 
-# AUTO EXPORT WHEN BUY
-msgctxt "SettingsSections::sendpulse::auto_export_buy"
-msgid "Export upon purchase"
-msgstr "При покупке"
-
-msgctxt "SettingsOptions::sendpulse::auto_export_buy_status"
-msgid "Use automatic export upon purchase"
-msgstr "При покупке"
-
-# AUTOSYNCH
 msgctxt "SettingsSections::sendpulse::autosynchronization"
-msgid "Auto Synchronization"
+msgid "Automatic synchronization"
 msgstr "Автосинхронизация"
 
-# Експорт при создании клиента
 msgctxt "SettingsOptions::sendpulse::title_auto_export_new_status"
-msgid "ЕПри создании клиента"
+msgid "New customer added"
 msgstr "При создании клиента"
 
 msgctxt "SettingsOptions::sendpulse::auto_export_new_status"
-msgid "Использовать"
-msgstr "Использовать"
+msgid "Activate"
+msgstr "Активировать"
 
 msgctxt "SettingsOptions::sendpulse::one_name_auto_export_new_status"
-msgid "Имя одим полем"
+msgid "Name in a single box"
 msgstr "Имя одим полем"
 
 msgctxt "SettingsOptions::sendpulse::select_auto_export_new_status"
-msgid "Адресная книга"
+msgid "Mailing list"
 msgstr "Адресная книга"
 
-# Експорт при покупке
 msgctxt "SettingsOptions::sendpulse::title_auto_export_new_order"
-msgid "При покупке"
+msgid "New order"
 msgstr "При покупке"
 
 msgctxt "SettingsOptions::sendpulse::one_name_auto_export_new_order"
-msgid "Имя одим полем"
+msgid "Name in a single box"
 msgstr "Имя одим полем"
 
 msgctxt "SettingsOptions::sendpulse::auto_export_new_order"
-msgid "Использовать"
-msgstr "Использовать"
+msgid "Activate"
+msgstr "Активировать"
 
 msgctxt "SettingsOptions::sendpulse::select_auto_export_new_order"
-msgid "Адресная книга"
+msgid "Mailing list"
 msgstr "Адресная книга"
 
-# Брошенная корзина
-msgctxt "SettingsOptions::sendpulse::title_auto_export_lost_basket"
-msgid "Брошенная корзина"
-msgstr "'' Брошенная корзина ''"
-
-msgctxt "SettingsOptions::sendpulse::auto_export_lost_basket"
-msgid "Использовать"
-msgstr "Использовать"
-
-msgctxt "SettingsOptions::sendpulse::select_auto_export_lost_basket"
-msgid "Адресная книга"
-msgstr "Адресная книга"
-
-# INFO
 msgctxt "SettingsSections::sendpulse::info"
-msgid "Info"
+msgid "Information"
 msgstr "Справка"
 
 msgctxt "Languages::sendpulse::info_text"
-msgid "Короткая справка"
-msgstr "Короткая справка"
+msgid "<p>This extension exports contacts to SendPulse. To export data, enter authorizaion details available <a target=\"_blank\" href=\"https://login.sendpulse.com/settings/#api\"><b>here</b></a>. Once you've done that, the export option will appear on the <b>\"Customers\"</b> tab.</p><p>To use additional features, move to \"Automatic synchronization\" tab and set up desired functions. Additional features allow to sunchronize contacts automatically when a <b>new order</b> or a <b>new user</b> is added</p>"
+msgstr "<p>Данное расширение позволяет выполнять експорт контактов в SendPulse. Для этого нужно ввести данные для авторизации, которые можно найти <a target=\"_blank\" href=\"https://login.sendpulse.com/settings/#api\"><b>здесь</b></a>. После чего на вкладке <b>\"Покупатели\"</b> будет доступна опция меню для экспорта.</p><p>Для того, чтобы воспользоваться дополнительними возможностями, прейдите на вкладку \"Автосинхронизация\" и настройте интересующие Вас функции. Они  позволяют автоматически синхронизировать контакты <b>при создании нового заказа</b> или <b>при регистрации нового пользователя</b></p>"
 
-# OTHER
 msgctxt "Languages::sendpulse::settings_info"
 msgid "<p>Authorization data can be found on the <a target=\"_blank\" href=\"https://login.sendpulse.com/settings/#api\">page.</a></b>.</p>"
 msgstr "<p>Данные для авторизации вы можете найти на странице <a target=\"_blank\" href=\"https://login.sendpulse.com/settings/#api\">https://login.sendpulse.com/settings/#api</a></p>"
 
 msgctxt "Languages::sendpulse::sp.name"
-msgid "Success"
+msgid "SendPulse"
 msgstr "SendPulse"
 
 msgctxt "Languages::sendpulse::sp.address_book"
-msgid "Success"
+msgid "Mailing list:"
 msgstr "Адресная книга:"
 
 msgctxt "Languages::sendpulse::sp.export_name"
-msgid "Success"
+msgid "Name in a single box:"
 msgstr "Имя одим полем:"
 
 msgctxt "Languages::sendpulse::sp.success.message"
-msgid "Success"
-msgstr "Данные загружены."
+msgid "Contacts exported."
+msgstr "Контакты экспортированы."
 
-# Errors
 msgctxt "Languages::sendpulse::sp.error.message.1"
-msgid "Success"
+msgid "Client verification failed."
 msgstr "Проверка подлинности клиента не удалась."
 
 msgctxt "Languages::sendpulse::sp.error.message.2"
-msgid "Success"
+msgid "Wrong SendPulse username."
 msgstr "Нет такого пользователя SendPulse."
 
 msgctxt "Languages::sendpulse::sp.error.message.3"
-msgid "Success"
+msgid "Verify your email address."
 msgstr "Вам необходимо подтвердить свой адрес электронной почты."
 
 msgctxt "Languages::sendpulse::sp.error.message.99"
-msgid "Success"
+msgid "Enter authorization details."
 msgstr "Укажите данные для авторизации."
 
 msgctxt "Languages::sendpulse::sp.error.message.999"
-msgid "Success"
+msgid "Something went wrong."
 msgstr "Что то пошло не так."
 
 msgctxt "Languages::sendpulse::sp.error.email"
-msgid "Success"
+msgid "email must be exported."
 msgstr "email обязателен для експорта."
