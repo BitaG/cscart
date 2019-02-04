@@ -1,0 +1,1 @@
+{script src="js/addons/lite_checkout/overrides/addons/rus_sdek/sdek_search.js"}

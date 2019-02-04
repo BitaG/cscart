@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>lite_checkout</id>
+    <version>1.0.0</version>
+    <priority>4900</priority>
+    <status>active</status>
+    <default_language>en</default_language>
+    <compatibility>
+        <dependencies>rus_customer_geolocation</dependencies>
+    </compatibility>
+
+    <queries>
+        <item for="install">ALTER TABLE ?:shippings ADD COLUMN is_address_required CHAR(1) NOT NULL DEFAULT 'Y';</item>
+        <item for="uninstall">ALTER TABLE ?:shippings DROP COLUMN is_address_required;</item>
+    </queries>
+    <functions>
+        <item for="demo">fn_lite_checkout_install_demo</item>
+    </functions>
+</addon>

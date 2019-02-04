@@ -1,0 +1,1 @@
+{style src="addons/lite_checkout/styles.less"}
