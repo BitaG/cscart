@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>sendpulse</id>
+    <version>1.0</version>
+    <name>SendPulse Connect</name>
+    <priority>1200</priority>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>ru</default_language>
+
+    <settings layout="popup" edition_type="MVE:ROOT,ULT:VENDOR">
+        <sections>
+            <section id="sp_general">
+                <items>
+                    <item id="settings_info">
+                        <type>info</type>
+                        <handler>fn_sendpulse_setting_info_handler</handler>
+                    </item>
+                    <item id="sp_client_id">
+                        <type>input</type>
+                    </item>
+                    <item id="sp_client_secret">
+                        <type>input</type>
+                    </item>
+                    <item id="sp_token">
+                        <type>hidden</type>
+                    </item>
+                </items>
+            </section>
+            <section id="autosynchronization">
+                <items>
+                    <item id="title_auto_export_new_status">
+                        <type>header</type>
+                    </item>
+                    <item id="auto_export_new_status">
+                        <type>checkbox</type>
+                    </item>
+                    <item id="one_name_auto_export_new_status">
+                        <type>checkbox</type>
+                    </item>
+                    <item id="select_auto_export_new_status">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="title_auto_export_new_order">
+                        <type>header</type>
+                    </item>
+                    <item id="auto_export_new_order">
+                        <type>checkbox</type>
+                    </item>
+                    <item id="one_name_auto_export_new_order">
+                        <type>checkbox</type>
+                    </item>
+                    <item id="select_auto_export_new_order">
+                        <type>selectbox</type>
+                    </item>
+                </items>
+            </section>
+            <section id="info">
+                <items>
+                    <item id="info_text">
+                        <type>info</type>
+                        <handler>fn_sendpulse_info_text_handler</handler>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+</addon>

@@ -1,0 +1,146 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: cs-cart-latest\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /release-4.9.2/addons/sendpulse.po\n"
+"Last-Translator: cscart <translations@cs-cart.com>\n"
+"PO-Revision-Date: 2018-12-25 08:30\n"
+
+msgctxt "Addons::description::sendpulse"
+msgid "Синхронизация с сервисом рассылок SendPulse"
+msgstr "Синхронизация с сервисом рассылок SendPulse."
+
+# GENERAL
+msgctxt "SettingsSections::sendpulse::sp_general"
+msgid "SendPulse Connect"
+msgstr "Подключение к SendPulse"
+
+msgctxt "SettingsOptions::sendpulse::sp_client_id"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "SettingsOptions::sendpulse::sp_client_secret"
+msgid "Secret"
+msgstr "Secret"
+
+# AUTO EXPORT WHEN BUY
+msgctxt "SettingsSections::sendpulse::auto_export_buy"
+msgid "Export upon purchase"
+msgstr "При покупке"
+
+msgctxt "SettingsOptions::sendpulse::auto_export_buy_status"
+msgid "Use automatic export upon purchase"
+msgstr "При покупке"
+
+# AUTOSYNCH
+msgctxt "SettingsSections::sendpulse::autosynchronization"
+msgid "Auto Synchronization"
+msgstr "Автосинхронизация"
+
+# Експорт при создании клиента
+msgctxt "SettingsOptions::sendpulse::title_auto_export_new_status"
+msgid "ЕПри создании клиента"
+msgstr "При создании клиента"
+
+msgctxt "SettingsOptions::sendpulse::auto_export_new_status"
+msgid "Использовать"
+msgstr "Использовать"
+
+msgctxt "SettingsOptions::sendpulse::one_name_auto_export_new_status"
+msgid "Имя одим полем"
+msgstr "Имя одим полем"
+
+msgctxt "SettingsOptions::sendpulse::select_auto_export_new_status"
+msgid "Адресная книга"
+msgstr "Адресная книга"
+
+# Експорт при покупке
+msgctxt "SettingsOptions::sendpulse::title_auto_export_new_order"
+msgid "При покупке"
+msgstr "При покупке"
+
+msgctxt "SettingsOptions::sendpulse::one_name_auto_export_new_order"
+msgid "Имя одим полем"
+msgstr "Имя одим полем"
+
+msgctxt "SettingsOptions::sendpulse::auto_export_new_order"
+msgid "Использовать"
+msgstr "Использовать"
+
+msgctxt "SettingsOptions::sendpulse::select_auto_export_new_order"
+msgid "Адресная книга"
+msgstr "Адресная книга"
+
+# Брошенная корзина
+msgctxt "SettingsOptions::sendpulse::title_auto_export_lost_basket"
+msgid "Брошенная корзина"
+msgstr "'' Брошенная корзина ''"
+
+msgctxt "SettingsOptions::sendpulse::auto_export_lost_basket"
+msgid "Использовать"
+msgstr "Использовать"
+
+msgctxt "SettingsOptions::sendpulse::select_auto_export_lost_basket"
+msgid "Адресная книга"
+msgstr "Адресная книга"
+
+# INFO
+msgctxt "SettingsSections::sendpulse::info"
+msgid "Info"
+msgstr "Справка"
+
+msgctxt "Languages::sendpulse::info_text"
+msgid "Короткая справка"
+msgstr "Короткая справка"
+
+# OTHER
+msgctxt "Languages::sendpulse::settings_info"
+msgid "<p>Authorization data can be found on the <a target=\"_blank\" href=\"https://login.sendpulse.com/settings/#api\">page.</a></b>.</p>"
+msgstr "<p>Данные для авторизации вы можете найти на странице <a target=\"_blank\" href=\"https://login.sendpulse.com/settings/#api\">https://login.sendpulse.com/settings/#api</a></p>"
+
+msgctxt "Languages::sendpulse::sp.name"
+msgid "Success"
+msgstr "SendPulse"
+
+msgctxt "Languages::sendpulse::sp.address_book"
+msgid "Success"
+msgstr "Адресная книга:"
+
+msgctxt "Languages::sendpulse::sp.export_name"
+msgid "Success"
+msgstr "Имя одим полем:"
+
+msgctxt "Languages::sendpulse::sp.success.message"
+msgid "Success"
+msgstr "Данные загружены."
+
+# Errors
+msgctxt "Languages::sendpulse::sp.error.message.1"
+msgid "Success"
+msgstr "Проверка подлинности клиента не удалась."
+
+msgctxt "Languages::sendpulse::sp.error.message.2"
+msgid "Success"
+msgstr "Нет такого пользователя SendPulse."
+
+msgctxt "Languages::sendpulse::sp.error.message.3"
+msgid "Success"
+msgstr "Вам необходимо подтвердить свой адрес электронной почты."
+
+msgctxt "Languages::sendpulse::sp.error.message.99"
+msgid "Success"
+msgstr "Укажите данные для авторизации."
+
+msgctxt "Languages::sendpulse::sp.error.message.999"
+msgid "Success"
+msgstr "Что то пошло не так."
+
+msgctxt "Languages::sendpulse::sp.error.email"
+msgid "Success"
+msgstr "email обязателен для експорта."

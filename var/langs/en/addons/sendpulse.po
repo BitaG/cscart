@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: cs-cart-latest\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /release-4.9.2/addons/sendpulse.po\n"
+"Last-Translator: cscart <translations@cs-cart.com>\n"
+"PO-Revision-Date: 2018-12-25 08:30\n"
+
+msgctxt "SettingsOptions::sendpulse::send_client_id"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "SettingsOptions::sendpulse::send_client_secret"
+msgid "ID"
+msgstr "Secret"
+
+msgctxt "SettingsOptions::sendpulse::sendpulse_api"
+msgid "SendPulse API"
+msgstr "SendPulse API"
+
+msgctxt "SettingsOptions::sendpulse::auto_export"
+msgid "Automatic export"
+msgstr "Automatic export"
+
+msgctxt "SettingsVariants::sendpulse::auto_export::auto_export_default"
+msgid "Automatic export from default"
+msgstr "Automatic export from default"
+
+msgctxt "SettingsVariants::sendpulse::auto_export::auto_export_buy"
+msgid "Automatic export from buy"
+msgstr "Automatic export from buy"
+
+msgctxt "SettingsVariants::sendpulse::auto_export::auto_export_sub"
+msgid "Automatic export from subscription"
+msgstr "Automatic export from subscription"
+
+msgctxt "Languages::sendpulse::settings_info"
+msgid "<p>Authorization data can be found on the <a target=\"_blank\" href=\"https://login.sendpulse.com/settings/#api\">page.</a></b>.</p>"
+msgstr "<p>Authorization data can be found on the <a target=\"_blank\" href=\"https://login.sendpulse.com/settings/#api\">page.</a></b>.</p>"
