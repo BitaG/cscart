@@ -115,3 +115,13 @@ msgstr "Что то пошло не так."
 msgctxt "Languages::sendpulse::sp.error.email"
 msgid "email must be exported."
 msgstr "email обязателен для експорта."
+
+msgctxt "SettingsOptions::sendpulse::title_push"
+msgid "push"
+msgstr "push"
+
+msgctxt "SettingsOptions::sendpulse::push_checkbox"
+msgid "Use push"
+msgstr "Use push"
+
+

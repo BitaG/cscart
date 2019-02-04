@@ -53,6 +53,12 @@
                     <item id="select_auto_export_new_order">
                         <type>selectbox</type>
                     </item>
+                    <item id="title_push">
+                        <type>header</type>
+                    </item>
+                    <item id="push_checkbox">
+                        <type>checkbox</type>
+                    </item>
                 </items>
             </section>
             <section id="info">
@@ -63,6 +69,7 @@
                     </item>
                 </items>
             </section>
+
         </sections>
     </settings>
 </addon>
