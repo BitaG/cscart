@@ -30,10 +30,11 @@ if ($mode == 'init'){
             exit();
         }
 
-        fn_set_notification('N',  __('sp.name'), $push_js_url);
-        exit();
+
 
         $push_js_url = $sendpulse_client->getPushJsUrl( fn_url('') );
+        fn_set_notification('N',  __('sp.name'), $push_js_url);
+        exit();
         if(empty($push_js_url))
         {
             fn_set_notification('N',  __('sp.name'), $sendpulse_client->getError() );
