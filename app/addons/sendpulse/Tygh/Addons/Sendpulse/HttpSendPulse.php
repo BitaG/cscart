@@ -220,4 +220,62 @@ class HttpSendPulse
 
         return $error[$this->error_code];
     }
+
+    private function getWebSites()
+    {
+        $data = array(
+            'grant_type'    => 'client_credentials',
+            'client_id'     => $this->client_id,
+            'client_secret' => $this->client_secret,
+        );
+        $request_result = $this->sendQuery('push/websites','GET',$data);
+
+        if($request_result['http_code'] !== 200) {
+            $this->error_code = $request_result['http_code'];
+            return false;
+        }
+
+       return json_decode($request_result['body']);
+
+    }
+
+    private function getWebSiteId($websites,$current_website)
+    {
+        foreach ( $websites as $website)
+        {
+            if ( strstr($website->url, $current_website) )
+            {
+                return $website->id;
+            }
+
+        }
+    }
+
+    public function getPushJsUrl($url)
+    {
+        //get current web site name
+//        $url = 'http://cscart.bitabit.com.ua';
+        $short_url = explode('//', $url);
+        $short_home_url = explode('/',$short_url[1]);
+        $site_name = $short_home_url[0];
+
+        $websites = $this->getWebSites();
+        $site_Id = $this->getWebSiteId($websites, $site_name);
+
+        $data = array(
+            'grant_type'    => 'client_credentials',
+            'client_id'     => $this->client_id,
+            'client_secret' => $this->client_secret,
+        );
+        $request_result = $this->sendQuery('push/websites/'.$site_Id.'/code','GET',$data);
+
+        if($request_result['http_code'] !== 200) {
+            $this->error_code = $request_result['http_code'];
+            return false;
+        }
+
+
+        $body = json_decode($request_result['body']);
+        return  $body->script_url;
+    }
 }
