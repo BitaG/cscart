@@ -30,7 +30,9 @@ if ($mode == 'init'){
             exit();
         }
 
-
+        fn_set_notification('K', __('sp.name'), fn_url(''));
+        exit();
+        fn_url('');
 
 //        $push_js_url = $sendpulse_client->getPushJsUrl( fn_url('') );
 //
