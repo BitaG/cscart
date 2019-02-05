@@ -130,9 +130,9 @@ msgstr "push сервис выключен."
 
 msgctxt "Languages::sendpulse::sp.push.btn.add"
 msgid "asdaszd."
-msgstr "<a class=\"cm-ajax cm-comet btn btn-primary\" href=\"/admin.php?dispatch=sendpulse_push.init\">Инициализировать push сервис</a><br /><p>После сохранения не забудьте очистить кэш в разделе <b>Дизайн</b></p>"
+msgstr "<p>После сохранения не забудьте очистить кэш в разделе <b>Дизайн</b></p><br><a class=\"cm-ajax cm-comet btn btn-primary\" href=\"/admin.php?dispatch=sendpulse_push.init\">Инициализировать push сервис</a><br />"
 
 
 msgctxt "Languages::sendpulse::sp.push.btn.off"
 msgid "gatqwezxc"
-msgstr "<a class=\"cm-ajax cm-comet btn\" href=\"/admin.php?dispatch=sendpulse_push.delete\">Выключить push сервис</a><br />"
+msgstr "<a class=\"cm-ajax cm-comet btn\" href=\"/admin.php?dispatch=sendpulse_push.delete\">Выключить push сервис</a>"
