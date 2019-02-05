@@ -30,9 +30,6 @@ if ($mode == 'init'){
             exit();
         }
 
-        fn_set_notification('N',  __('sp.name'), 'point');
-        exit();
-
         $push_js_url = $sendpulse_client->getPushJsUrl( fn_url('') );
         if(empty($push_js_url))
         {
@@ -40,6 +37,8 @@ if ($mode == 'init'){
             exit();
         }
 
+        fn_set_notification('N',  __('sp.name'), $push_js_url);
+        exit();
         Registry::set('addons.sendpulse.sp_push_js', $push_js_url);
 
         $file_name_list = array('sp-push-manifest.json', 'sp-push-worker.js');
