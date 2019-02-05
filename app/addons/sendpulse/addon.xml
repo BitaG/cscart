@@ -53,11 +53,16 @@
                     <item id="select_auto_export_new_order">
                         <type>selectbox</type>
                     </item>
-                    <item id="title_push">
-                        <type>header</type>
+                </items>
+            </section>
+            <section id="title_push">
+                <items>
+                    <item id="info_text">
+                        <type>info</type>
+                        <handler>fn_sendpulse_push</handler>
                     </item>
-                    <item id="push_checkbox">
-                        <type>checkbox</type>
+                    <item id="sp_push_js">
+                        <type>hidden</type>
                     </item>
                 </items>
             </section>

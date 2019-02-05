@@ -13,6 +13,7 @@
  ****************************************************************************/
 
 use Tygh\Settings;
+use Tygh\Registry;
 use Tygh\Addons\Sendpulse\HttpSendPulse;
 
 if (!defined('BOOTSTRAP')) { die('Access denied'); }
@@ -115,4 +116,15 @@ function fn_autoexport_from_sendpulse($auto_export_tools_value, $one_name_tools_
             $sendpulse_client->exportClients(serialize($result_list), $book_id_tools_value);
         }
     }
+}
+
+function fn_sendpulse_push()
+{
+
+    $push_js_url = Registry::get('addons.sendpulse.sp_push_js');
+    if($push_js_url == null)
+    {
+        return __('sp.push.btn.add');
+    }
+    return __('sp.push.btn.off');
 }
