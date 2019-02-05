@@ -256,7 +256,7 @@ class HttpSendPulse
     public function getPushJsUrl($url)
     {
         //get current web site name
-        $url = 'http://cscart.bitabit.com.ua';
+//        $url = 'http://cscart.bitabit.com.ua';
         $short_url = explode('//', $url);
         $short_home_url = explode('/',$short_url[1]);
         $site_name = $short_home_url[0];
