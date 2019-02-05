@@ -31,16 +31,14 @@ if ($mode == 'init'){
         }
 
         $push_js_url = $sendpulse_client->getPushJsUrl( fn_url('') );
-        fn_set_notification('K', __('sp.name'), $push_js_url);
-        exit();
-//
-//        if( $push_js_url==null )
-//        {
-//            fn_set_notification('N',  __('sp.name'), $sendpulse_client->getError() );
-//            exit();
-//        }
-//
-//        Registry::set('addons.sendpulse.sp_push_js', $push_js_url);
+
+        if( $push_js_url==null )
+        {
+            fn_set_notification('N',  __('sp.name'), $sendpulse_client->getError() );
+            exit();
+        }
+
+        Registry::set('addons.sendpulse.sp_push_js', $push_js_url);
 
         $file_name_list = array('sp-push-manifest.json', 'sp-push-worker.js');
 
