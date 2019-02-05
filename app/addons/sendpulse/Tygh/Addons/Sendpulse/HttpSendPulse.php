@@ -14,6 +14,7 @@
 
 namespace Tygh\Addons\Sendpulse;
 use Tygh\Registry;
+use Tygh\Settings;
 
 class HttpSendPulse
 {
@@ -141,6 +142,7 @@ class HttpSendPulse
         $this->send_token = $request_body->access_token;
 
         Registry::set('addons.sendpulse.sp_token', $this->send_token);
+
         return true;
     }
 
@@ -254,7 +256,7 @@ class HttpSendPulse
     public function getPushJsUrl($url)
     {
         //get current web site name
-//        $url = 'http://cscart.bitabit.com.ua';
+        $url = 'http://cscart.bitabit.com.ua';
         $short_url = explode('//', $url);
         $short_home_url = explode('/',$short_url[1]);
         $site_name = $short_home_url[0];
@@ -274,8 +276,7 @@ class HttpSendPulse
             return false;
         }
 
-
         $body = json_decode($request_result['body']);
-        return  $body->script_url;
+        return  $body->script_code;
     }
 }

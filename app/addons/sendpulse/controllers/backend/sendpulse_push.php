@@ -13,6 +13,7 @@
  ****************************************************************************/
 
 use Tygh\Registry;
+use Tygh\Settings;
 use Tygh\Ajax;
 
 use Tygh\Addons\Sendpulse\HttpSendPulse;
@@ -31,14 +32,12 @@ if ($mode == 'init'){
         }
 
         $push_js_url = $sendpulse_client->getPushJsUrl( fn_url('') );
-
-        if( $push_js_url==null )
+        if(empty($push_js_url))
         {
             fn_set_notification('N',  __('sp.name'), $sendpulse_client->getError() );
             exit();
         }
-
-        Registry::set('addons.sendpulse.sp_push_js', $push_js_url);
+        Settings::instance()->updateValue('sp_push_js',$push_js_url,'sendpulse');
 
         $file_name_list = array('sp-push-manifest.json', 'sp-push-worker.js');
 
@@ -51,7 +50,6 @@ if ($mode == 'init'){
             }
         }
 
-        $msg = Registry::get('addons.sendpulse.sp_push_js');
         fn_set_notification('N',  __('sp.name'), __('sp.push.success'));
         exit();
     }
@@ -61,8 +59,7 @@ if ($mode == 'init'){
 if ($mode == 'delete'){
     if (defined('AJAX_REQUEST'))
     {
-
-        Registry::set('addons.sendpulse.sp_push_js', null);
+        Settings::instance()->updateValue('sp_push_js', null,'sendpulse');
 
         $file_name_list = array(
             'sp-push-manifest.json',

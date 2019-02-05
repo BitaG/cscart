@@ -55,7 +55,7 @@
                     </item>
                 </items>
             </section>
-            <section id="title_push">
+            <section id="sp_push">
                 <items>
                     <item id="info_text">
                         <type>info</type>

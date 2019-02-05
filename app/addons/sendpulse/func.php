@@ -121,10 +121,11 @@ function fn_autoexport_from_sendpulse($auto_export_tools_value, $one_name_tools_
 function fn_sendpulse_push()
 {
 
-    $push_js_url = Registry::get('addons.sendpulse.sp_push_js');
-    if($push_js_url == null)
+    $push_js = Settings::instance()->getValue('sp_push_js','sendpulse');
+    if($push_js == null)
     {
         return __('sp.push.btn.add');
     }
     return __('sp.push.btn.off');
 }
+
