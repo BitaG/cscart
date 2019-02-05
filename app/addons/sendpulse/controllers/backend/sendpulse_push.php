@@ -29,7 +29,8 @@ if ($mode == 'init'){
             fn_set_notification('K', __('sp.name'), $sendpulse_client->getError());
             exit();
         }
-
+        fn_set_notification('N',  __('sp.name'), 'point');
+        exit();
         $push_js_url = $sendpulse_client->getPushJsUrl( fn_url('') );
         if(empty($push_js_url))
         {
